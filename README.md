@@ -220,9 +220,51 @@ RedCircle.color
 
 ```
 ## 4 Working with Data in Python
-
 ### 4.1 Reading files with open
+
+```python
+example1="/resources/data/Example1.txt"
+file1 = open(example1,"r")
+
+FileContent=file1.read()
+
+#dont need to close the file
+with open(example1,"r") as file1:
+    FileContent=file1.read()
+    print(FileContent)
+    
+#reading line by line 
+with open(example1,"r") as file1:
+    FileContent=file1.readlines()
+    print(FileContent)
+    
+#reading character by character
+with open(example1,"r") as file1:
+    print(file1.read(4))
+    print(file1.read(4))
+    print(file1.read(7))
+    print(file1.read(15))
+    
+
+```
 ### 4.2 Writing files with open
+```python
+
+with open('/resources/data/Example2.txt','w') as writefile:
+    writefile.write("This is line A")
+    
+#append the file
+with open('/resources/data/Example2.txt','a') as testwritefile:
+    testwritefile.write("This is line C\n")
+
+#copy a file 
+with open('Example2.txt','r') as readfile:
+with open('Example3.txt','w') as writefile:
+          for line in readfile:
+                writefile.write(line
+```
 ### 4.3 Loading data with Pandas
+
+
 ### 4.4 Working with and Saving data with Pandas
  
