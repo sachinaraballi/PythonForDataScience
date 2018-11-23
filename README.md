@@ -88,9 +88,9 @@ tuple2 = tuple1 + ("sarvesh" , 30)
 nested =(1, 2, ("sachin", "sarvesh") ,(3,4),("araballi",(1,2)))
 
 #Access the element, with respect to index 2:
-nested[3][1] -> "sachin"
+nested[3][1] - "sachin"
 
-nested.index("1") -> 0
+nested.index("1") - 0
 ```
 #### Lists
 
@@ -114,7 +114,33 @@ L.del("sarvesh")
 ```
 
 ### 2.2 Sets
+
+A set is a unique collection of objects in Python. It is denoted by curly bracket **{}**. 
+```python
+set1 = {"carnatic", "pop", "hundostani", "western"}
+
+list1 = [1, 2, 3, 4]
+set2 = set(list1)
+
+set2.add(5)
+
+5 in set2
+True
+
+#common elements in 2 sets
+set3 = set1 & set2
+
+#difference
+set3 = set1.difference(set2)
+
+#intersection
+set1.intersection(set2)   
+
+#other methods union, issuperset , issubset
+```
 ### 2.3 Dictionaries
+
+
 
 ## 3 Python Programming Fundamentals
 
