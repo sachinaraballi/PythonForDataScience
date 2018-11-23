@@ -140,18 +140,89 @@ set1.intersection(set2)
 ```
 ### 2.3 Dictionaries
 
+A dictionary consists of keys and values.
 
+<img src="https://ibm.box.com/shared/static/6tyznuwydogmtuv73o8l5g7xsb8o92h2.png" alt="alt text" width="400" height="200">
+
+```python
+dict={"key1":1,"key2":"2","key3":[3,3,3],"key4":(4,4,4),('key5'):5,(0,1):6}
+
+#Accessing 
+dict["key1"] - 1
+
+dict.keys()
+
+dict.values()
+
+del(dict["key1"])
+
+"key1" in dict
+
+```
 
 ## 3 Python Programming Fundamentals
 
 ### 3.1 Conditions and Branching
+
+```python
+if not (a < 16 or a < 17 and a < 19) : 
+
+elif a < 18:
+
+else : 
+
+```
 ### 3.2 Loops
+
+```python
+for i in range(5) : 
+
+As = [1, 2, 3]
+for a in As : 
+
+for i, a in enumerate(As) : 
+
+while(condition) : 
+```
 ### 3.3 Functions
+
+complete the function <code> f </code> so that it returns the product of <code> a </code> and <code> b </code> , you the next cell to test the function
+
+```python
+def f(a,b);
+    return a+b
+    
+f(2,4)
+```
 ### 3.4 Objects and Classes
 
+```python
+class Circle(object): 
+    
+    def __init__(self,radius=3,color='blue'): #constructor with default values
+        # data attributes
+        self.radius=radius
+        self.color=color 
+    
+    def add_radius(self,r): #method 
+        
+        self.radius=self.radius+r
+        return(self.radius)
+        
+RedCircle = Circle(4, red)
+
+dir(RedCircle)
+#returns all data atrributes
+
+RedCircle.radius
+RedCircle.color 
+
+
+```
 ## 4 Working with Data in Python
 
 ### 4.1 Reading files with open
 ### 4.2 Writing files with open
 ### 4.3 Loading data with Pandas
 ### 4.4 Working with and Saving data with Pandas
+ 
