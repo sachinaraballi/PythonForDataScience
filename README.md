@@ -29,6 +29,12 @@ We can *type(value)* to get the type of value
 2 * 3 + 5
 11
 
+6 / 2 
+3.0 # float
+
+6 // 2
+3 #int
+
 #variable declaration
 var = 10
 #assign a value
@@ -36,6 +42,36 @@ var:20
 ```
 
 ### 1.3 String Operations
+
+Here we have both positive indexing and negative indexing
+
+name = "Sachin A"
+
+S | A |  C |  H | I | N |  | A 
+-- | -- | -- | -- | -- |-- | -- | -- | 
+0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8
+-8 | -7 | -6 | -5 | -4 | -3 | -2 | -1
+
+name[0]:S name[8]:A or name[-8]:S name[-1]:A
+
+* String : Slicing
+
+    name[0:4] = SAC
+    name[4:7] = HIN
+
+* String : Stride
+    
+    name[::2]:SCI A
+    name[0:5:2]:SCI
+    
+* Some String Methods
+    mame.upper()
+    
+    name.replace('SA' , 'MA)
+    
+    name.find('A') -> 8
+    
+
 
 ## 2 Python Data Structures
 
