@@ -70,12 +70,49 @@ name[0]:S name[8]:A or name[-8]:S name[-1]:A
     name.replace('SA' , 'MA)
     
     name.find('A') -> 8
-    
-
+   
 
 ## 2 Python Data Structures
-
 ### 2.1 Lists and Tuples
+
+#### Tuples
+* In Python, there are different data types: string, integer and float. These data types can all be contained in a tuple.
+* Tuples are immutable
+```python
+tuple1 = ("sachin", 100, 1.20)
+
+#concatinating tuples
+tuple2 = tuple1 + ("sarvesh" , 30)
+
+#nested tuple
+nested =(1, 2, ("sachin", "sarvesh") ,(3,4),("araballi",(1,2)))
+
+#Access the element, with respect to index 2:
+nested[3][1] -> "sachin"
+
+nested.index("1") -> 0
+```
+#### Lists
+
+Lists are mutable datastructures
+
+```python
+L = ["sachin", 1 , 2, 3]
+
+#We can use the method "extend" to add new elements to the list:
+L.extend(["sarvesh", 2])
+
+["sachin", 1 , 2, 3, "sarvesh", 2]
+
+L.append(["sarvesh", 2])
+["sachin", 1 , 2, 3, ["sarvesh", 2]]
+
+L.del("sarvesh")
+
+"sachin, a".split(',');
+[sachin, a]
+```
+
 ### 2.2 Sets
 ### 2.3 Dictionaries
 
