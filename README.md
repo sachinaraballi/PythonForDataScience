@@ -1,7 +1,7 @@
-# Python For Data Science!
+# Python For Data Science! :metal:
 Beginner Guide to Python for Data Science
 
-## 1 Python Basics
+## 1 Python Basics :snake:
 
 Here the tool used to run Python is Anaconda - Spyder (Python 3.7)
 
@@ -172,7 +172,7 @@ elif a < 18:
 else : 
 
 ```
-### 3.2 Loops
+### 3.2 Loops :loop:
 
 ```python
 for i in range(5) : 
@@ -263,7 +263,7 @@ with open('Example3.txt','w') as writefile:
           for line in readfile:
                 writefile.write(line
 ```
-### 4.3 Loading data with Pandas
+### 4.3 Loading data with Pandas :panda_face::panda_face:
 
 
 ### 4.4 Working with and Saving data with Pandas
