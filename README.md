@@ -264,7 +264,66 @@ with open('Example3.txt','w') as writefile:
                 writefile.write(line
 ```
 ### 4.3 Loading data with Pandas :panda_face::panda_face:
+```python
+import pandas as pd
+
+csv_path = "sample.csv"
+df = pd.read_csv(csv_path)
+
+df.head() #returns first five rows of dataframe
+
+#we can get a new data frame from a single column of a dataframe
+x = df[['column_name']]
+
+#to access specific value
+df.iloc[0,0]
+
+df.loc[1,'column_name']
+
+#You can perform slicing using both the index and the name of the column:
+df.iloc[0:2, 0:3]
+
+df.loc[0:2, 'from_column_name':'to_column_name']
+```
 
 
 ### 4.4 Working with and Saving data with Pandas
- 
+```python
+import pandas as pd
+
+df=pd.DataFrame({'a':[1,2,1],'b':[1,1,1]})
+
+df.to_csv("sample.csv")
+```
+
+## Numpy Arrays
+Numpy is a python library for scientific computing. 
+
+### 1 D Array
+```python
+import numpy as np
+a = np.array([0,1,2,3,4])
+
+type(a)
+# returns numpy.ndarray
+a.size
+a.ndim
+a.size
+```
+Vector Addition, subtraction, multiplication can be done 
+e.g dot product 
+```python
+x=np.array([0,np.pi/2 , np.pi] )
+y=np.sin(x)
+array([0.0000000e+00, 1.0000000e+00, 1.2246468e-16])
+
+np.linspace(-2,2,num=5)
+array([-2., -1.,  0.,  1.,  2.])
+
+```
+### 2 D Array
+
+a = [[1,2,3][4,5,6][7,8,9]]
+A = np.array(a)
+A.T 
+#transpose of matrix
